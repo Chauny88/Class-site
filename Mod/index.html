@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Module 2 Solution</title>
+    <style>
+body {
+    font-family: Algerian, sans-serif; font-size: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+header {
+    text-align: center;
+    background-color: #e04d01;
+    color: #d4af37;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden; /* Clear floats */
+}
+
+ {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 2%;  
+    border: 1px solid black;
+    background-color: #5b8c5a;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;   
+    top: 0;
+    right: 0;
+    background-color: #159ab7;
+    border: 1px solid black; 
+    color: #1e5067;
+    padding: 5px 10px;
+    font-size: 100%; 
+}
+
+.section-content {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    /* Tablet View */
+    .section {
+        width: 48%;
+        font-size: ;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+        width: 98%;
+    }
+}
+@media (min-width: 992px) {
+    /* Desktop View */
+    .section {
+        width: 31.33%;   
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>World Class Menu</h1>
+    </header>
+    <main>
+        <section class="section">
+            <div class="section-title">Chicken</div>
+            <div class="section-content">
+                <p> Beer battered fried chicken with indian curry sauce.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-title">Beef</div>
+            <div class="section-content">
+                <p> Beef burgundy with egg noodles in red wine sauce.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-title">Sushi</div>
+            <div class="section-content">
+                <p> Your choice of lemon pepper or lime pepper sushi.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
